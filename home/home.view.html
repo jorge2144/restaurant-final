@@ -1,0 +1,12 @@
+﻿<h1>Hola {{vm.user.firstName}}!</h1>
+<p>Bievenido!!</p>
+<span ng-if="vm.user.firstName == 'jorge'">
+<p>Administrador!!</p>
+	<li ng-repeat="user in vm.allUsers">
+		{{user.username}} ({{user.firstName}} {{user.lastName}})
+		- <a ng-click="vm.deleteUser(user.id)">Borrar</a>
+    </li>    
+</span>
+<p>&nbsp;</p>
+<p><a href="#!/login" class="btn btn-primary">Logout</a></p>
+<p><a href="index.html" class="btn btn-primary">Inicio</a></p>

@@ -1,0 +1,109 @@
+.monospaced { font-family: 'Ubuntu Mono', monospaced ; }
+
+.add-to-cart .btn-qty {
+  width: 52px;
+  height: 46px;
+}
+.add-to-cart .btn { border-radius: 0; }
+
+/*
+ configuracion del nav 3.7
+ repo en escritorio
+*/
+.nav-pills{
+   background-color:black;
+   position: fixed;
+   width: 100%;
+   z-index: 50;
+   top: 0px;
+}
+.dropdown a{
+  color:#f3f5f6;
+}
+.nav li a:hover,
+.nav li a:focus{
+  background color:black;
+  
+}
+.nav-tabs .open .dropdown-toggle, .nav-pills .open .dropdown-toggle, .nav>li.dropdown.open.active>a:hover, .nav>li.dropdown.open.active>a:focus {
+    color: #ffffff;
+    background-color: black;
+    border-color: #999999;
+    }
+    .nav > li > a:hover, .nav > li > a:focus {
+    background-color: black;
+    text-decoration: none;
+}
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+
+.navbar .sub-menu:after {
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+
+
+
+
+/*
+ titulo en el nav
+*/
+.lobster {
+  font-family: 'Dancing Script', cursive; }
+ .title {
+  font-size: 4em; }
+ .white-text{
+ 	color: white;
+ }
+
+.container{
+	padding:20px;
+	margin-top:100px;
+	background-color:white;
+	height:300px;
+}
+.bottom-rule {
+    border-bottom: 1px solid lightgray;
+}
+/*
+footer {
+    padding-top: 20px;
+    border-top: 10px solid #332e20;
+    background-color: white;
+}
+.footer-section{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+ }
+
+ @media (min-width: 768px) {
+    .footer-section {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+     }
+ }
+ footer .list-inline li:not(:first-child):not(:last-child) {
+    border-right: 1px solid lightgray;
+}
+*/

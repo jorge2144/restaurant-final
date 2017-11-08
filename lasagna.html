@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+     <link rel="stylesheet" href="css/platoCompra.css">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.shop.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+</head>
+      <title>Lasagna</title>
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<ul class="nav nav-pills">
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu <b class="caret"></b></a>
+    <ul class="dropdown-menu" id="menu1">
+     <li><a href="pizza.html">Pizza</a></li>
+     <li><a href="parrilla.html">Parrilla</a></li>
+     <li><a href="panini.html">Panini</a></li>
+     <li><a href="papas.html">Papas</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a href="index.html#gallery">Galería</a>
+  </li>
+  <li class="dropdown">
+    <a href="index.html#contact">Contáctanos</a>
+  </li>
+  <li class="dropdown">
+    <a href="index.html#location">Como llegar</a>
+  </li>
+  <li class="dropdown">
+    <a href="Registro.html">Registrarse</a>
+  </li>
+  <li class="dropdown">
+    <a href="cart.html">Carrito</a>
+  </li>
+  <li style="right: 5px ; float: right; color: white;">
+  La mejor comida la encuentras en Restaurante Lothiem
+  </li>
+</ul>
+
+<div class="logo">
+	<h1 class="text-center lobster" style="padding-top:100px">
+		Restaurante Lothiem
+		<img alt="Logo Restaurante" height="40" src="imgs/logo.png" width="50">
+	</h1>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<img src="imgs/food/lasagna.jpg" alt="club Sandwich" class="image-responsive">
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="product-name">Lasagna</h1>
+				</div>
+				<div class="col-md-12">
+  					<span class="label label-primary" style="background-color: orange">Tasty</span>
+  					<span class="monospaced">No. 1960140180</span>
+ 				</div>
+ 				<div class="col-md-12">
+ 					<p class="description">
+ 						La mejor Lasagna solo los encuentras en el Restaurante Lothiem
+ 					</p>
+ 				</div>
+ 				<div class="col-md-3">
+  					<span class="sr-only">Four out of Five Stars</span>
+  					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+ 					<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  					<span class="label label-success">61</span>
+ 				</div>
+ 				<div class="col-md-3">
+  					<span class="monospaced">Escribe una reseña</span>
+ 				</div>
+			</div><!--end row -->
+
+			<div class="row">
+				<div class="col-md-12 bottom-rule">
+ 				</div>
+			</div><!--end row -->
+      <!--inicia carrito de compras / aumentar el style.css a la carpeta css -->
+      <div id="site">
+        <div id="content">
+          <div id="products">
+              <ul>
+                <li>
+                <div class="product-description" data-name="Lasagna" data-price="25">
+              <p class="product-price">&#36; 25</p>
+                <form class="add-to-cart" action="cart.html" method="post">
+                  <div>
+                    <label for="qty-1">Cantidad</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <p><input type="submit" value="Add to cart" class="btn" /></p>
+                </form>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--fin carrito de compras -->
+
+      
+      <div class="row">
+        <div class="col-md-4 text-center">
+            <span class="monospaced">En stock</span>
+        </div>
+        <div class="col-md-4 col-md-offset-1 text-center">
+            <a class="monospaced" href="#">1+Lista de deseos</a>
+        </div>
+      </div><!-- end row -->
+      <div class="row">
+        <div class="col-md-12 bottom-rule top-10"></div>
+      </div><!-- end row -->
+
+      <div class="row">
+        <div class="col-md-12 top-10">
+            <p>Para ordenar su delivery por teléfono, <a href="tel:5051111">por favor llame al 505-1111</a></p>
+        </div>
+      </div><!-- end row -->
+      
+  <!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+ <li role="presentation" class="active">
+  <a href="#description"
+   aria-controls="description"
+   role="tab"
+   data-toggle="tab"
+  >Descripción</a>
+ </li>
+ <li role="presentation">
+  <a href="#features"
+   aria-controls="features"
+   role="tab"
+   data-toggle="tab"
+  >Ingredientes</a>
+ </li>
+ <li role="presentation">
+  <a href="#notes"
+   aria-controls="notes"
+   role="tab"
+   data-toggle="tab"
+   >Chef a cargo</a>
+ </li>
+ <li role="presentation">
+  <a href="#reviews"
+   aria-controls="reviews"
+   role="tab"
+   data-toggle="tab"
+  >Reseñas</a>
+ </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+ <div role="tabpanel" class="tab-pane active" id="description">
+  <p>La tortita, panqueque o pancaque1 (en inglés pancake y en Estados Unidos también hotcakes, griddlecakes, o flapjacks) es un pan plano redondo dulce. Se diferencia del crepe en que es de menor diámetro (10 cm frente a 16), cuenta con levadura y se hace a fuego medio, en vez de a fuego lento, hasta que se dore.
+Existen muchas variantes en diferentes culturas y países, no sólo en los ingredientes sino en la forma de ser servido.
+El Martes de Carnaval también se denomina Martes del Pancaque.</p>
+ </div>
+ <div role="tabpanel" class="tab-pane top-10" id="features">
+  <p>Leche, mantequilla, huevos, harina, levadura, azúcar, sal y opcionalmente, una especia, esencia o extracto (canela, por ejemplo).</p>
+ </div>
+ <div role="tabpanel" class="tab-pane" id="notes">
+  <p>Brandon Hospina Orco</p>
+ </div>
+ <div role="tabpanel" class="tab-pane" id="reviews">
+  <div class="fb-comments"></div>
+ </div>
+</div>
+</div><!-- end row --> 
+</div><!--end container -->
+
+<footer class="navbar-default">
+ <div class="container2">
+  <div class=”row bottom-rule”>
+  <div class="col-sm-4 footer-section">
+    <strong>Conectate con el restaurante</strong>
+    <p>Recibe los mejores descuentos y promociones sobbre tus comidas preferidas</p>
+    <form class="form-inline">
+        <div class="form-group">
+            <label 
+                class="sr-only" 
+                for="inputEmail">Email</label>
+            <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="correo@example.com"
+            >
+         </div>
+         <button type="submit" class="btn btn-default">Suscríbete</button>
+     </form>
+ </div>
+ <div class="col-sm-5 footer-section">
+    <ul class="list-inline">
+        <li class="text-uppercase">Customer Service:</li>
+        <li><a href="index.html#contact">Returns</a></li>
+        <li><a href="index.html">Privacy Policy</a></li>
+        <li><a href="index.html">Our Guarantee</a></li>
+        <li><a href="cart.html">Shipping</a></li>
+        <li><a href="index.html#menu">Product Guides</a></li>
+        <li><a href="index.html">Customer Care</a></li>
+    </ul>
+    <ul class="list-inline">
+        <li class="text-uppercase">Social Media &amp; Articles:</li>
+        <li><a href="https://www.instagram.com/?hl=es " target="_blank">Instagram</a></li>
+        <li><a href="https://es.pinterest.com/"  target="_blank">Pinterest</a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+        <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://bestself.co/" target="_blank">The Best Journal</a></li>
+    </ul>
+    <ul class="list-inline">
+        <li class="text-uppercase">Events:</li>
+        <li><a href="#">Proyect june 02</a></li>
+        <li><a href="#">Making Fire</a></li>
+    </ul>
+</div>
+<div class="col-sm-3">
+    <address>
+        <strong>Best Restaurant</strong><br>
+        1000 Some Fantastic Place<br>
+        La Molina, CA 94103<br>
+        (051) 505 - 1111 (phone &amp; text)<br>
+        <a href="index.html#contact">Contáctanos</a>
+    </address>
+</div>
+  <div class="row bottom-rule">
+    <div class="col-sm-12">
+        <nav class="navbar navbar-default navbar-footer">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Customer Care</a></li>
+                <li><a href="index.html">Summer Lookbook</a></li>
+                <li><a href="index.html">Gift Cards</a></li>
+                <li><a href="index.html">About Best Store</a></li>
+                <li><a href="index.html#contac">Contactanos</a></li>
+                <li><a href="https://bestself.co/" target="_blank">The Best Journal</a></li>
+            </ul>
+        </nav>
+    </div>
+</div><!-- end row -->
+
+  </div>
+</footer>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lothiem: Your Shopping Cart</title>
+<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/platoCompra.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+
+<body>
+
+<ul class="nav nav-pills">
+<li class="dropdown">
+  <a href="index.html">Inicio</a>
+</li>
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu <b class="caret"></b></a>
+  <ul class="dropdown-menu" id="menu1">
+    <li><a href="hotCakes.html">Hot Cakes</a></li>
+    <li><a href="hamburguesa.html">Hamburguesa</a></li>
+    <li><a href="panini.html">Panini</a></li>
+    <li><a href="clubSandwich.html">Club Sandwich</a></li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="index.html#gallery">Galeria</a>
+</li>
+<li class="dropdown">
+  <a href="index.html#contact">Contactanos</a>
+</li>
+<li class="dropdown">
+  <a href="index.html#location">Como llegar</a>
+</li>
+<li style="right: 5px ; float: right; color: white;">
+	La mejor comida la encuentras en restaurante Lothiem
+</li>
+</ul>
+
+
+<div id="site">
+	<header id="masthead">
+		<h1>Lothiem <span class="tagline">Los mejores platos y el mejor servico desde 2017</h1>
+	</header>
+	<div id="content" style="position: relative;">
+		<h1>Tu Carro De Compras</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item(s)</th>
+					<th scope="col">Cantidad</th>
+					<th scope="col" colspan="2">Precio</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Actualiza Carrito" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Vaciar Carrito" />
+				</li>
+				<li>
+					<a href="javascript:window.history.back();"" class="btn">&laquo;Continua Comprando</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+</body>
+</html>	

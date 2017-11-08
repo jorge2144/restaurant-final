@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>La mejor comida en Restaurante Lothiem</title>
+    <meta content="Come rico y barato en el mejor rastaurante de la ciudad, servicio de primera. Los mejores tacos de la ciudad." name="description">
+    <meta content="6" data-name="image_counter">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">
+      Estás usando un navegador
+      <strong>desactualizado.</strong>
+      Por favor
+      <a href="http://browsehappy.com/">
+        actualiza tu navegador
+      </a>
+      para una mejor experiencia
+    </p>
+    <![endif]-->
+    <div class="video-container">
+      <!-- Width and height attrs are ok on media and images -->
+      <video autoplay height="720" loop muted poster="videos/images/etalo.jpg" width="1280">
+        <source src="videos/mp4/etalo.mp4" type="video/mp4">
+        <source src="videos/webm/etalo.webm" type="video/webm">
+      </video>
+      <!-- button falta mejorar -->
+    </div>
+
+    <div class="button-container medium left">
+      <button class="glyphicon glyphicon-volume-up" id="mute-video"></button>
+    </div>
+
+    <div class="row middle-xs full-height center-xs up relative" ng-app="">
+      <nav class="fixed right top up main-nav" id="navigation">
+        <ul class="list-inline">
+          <li class="medium">
+            <a href="#menu">Menú</a>
+          </li>
+          <li class="medium">
+            <a href="#gallery">Galería</a>
+          </li>
+          <li class="medium">
+            <a href="#contact">Contacto</a>
+          </li>
+          <li class="medium">
+            <a href="#location">Cómo llegar</a>
+          </li>
+          <!---
+          <li class="medium">
+            <a href="login.html" target="_blank">Login</a>
+          </li>
+          /!-->
+          <li ng-show="vm.user.firstName!==undefined">{{vm.user.firstName}}
+          </li>
+          <li ng-show="vm.user.firstName ==undefined"><a href="login.html" target="_blank">{{vm.user.firstName}}</a>
+          </li>
+          <li class="medium">
+            <a href="cart.html" >
+            <img src="imgs/iconCar.png" alt="icon carrito" height="26" width="26" style="background-color: orange">Detalle</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="col-xs-12">
+        <div class="box main-content">
+          <img alt="Logo Restaurante" height="145" src="imgs/logo.png" width="200">
+          <h1 class="white-text title lobster no-margin">Restaurante Lothiem</h1>
+          <p class="white-text slim top-space" id="is_open">
+            <span class="glyphicon glyphicon-time"></span>
+            <span class="text">Abierto ahora</span>
+            <span class="glyphicon glyphicon-search"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="absolute medium black large-padding up--2" id="description">
+        <div class="row">
+          <div class="col-xs-8 col-sm-6 moto white-text">Atención cálida y comida preparada por artistas</div>
+          <div class="fade col-sm-6 navigation col-xs-4">
+            <nav class="small text-right main-nav" id="responsive-nav">
+              <span class="glyphicon glyphicon-menu-hamburger menu white-text subtitle"></span>
+              <ul class="list-inline">
+                <li class="white-text">
+                  <a href="#menu">Menú</a>
+                </li>
+                <li class="white-text">
+                  <a href="#gallery">Galería</a>
+                </li>
+                <li class="white-text">
+                  <a href="#contact">Contacto</a>
+                </li>
+                <li class="white-text">
+                  <a href="#location">Cómo llegar</a>
+                </li>
+                <li class="white-text">
+                  <a href="login.html"  target="_blank">Login</a>
+                </li>
+                <li class="white-text">
+                  <a href="cart.html"><img src="imgs/iconCar.png" alt="icon carrito" height="20" width="20">Detalle</a> 
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center relative" id="menu">
+      <div class="absolute up" id="menu-title">
+        <h2 class="lobster title">Menú</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/club-sandwich-thumb.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Club Sandwich</h3>
+                  <p class="no-margin">10.00 USD</p>
+                  <a href="clubSandwich.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/lasagna.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Lasagna</h3>
+                  <p class="no-margin">25.00 USD</p>
+                  <a href="lasagna.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/hamburger-thumb.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Hamburguesas</h3>
+                  <p class="no-margin">15.00 USD</p>
+                  <a href="hamburguesa.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/hot-cakes-thumb.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Hot cakes</h3>
+                  <p class="no-margin">12.00 USD</p>
+                  <a href="hotCakes.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/panini-thumb.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Panini</h3>
+                  <p class="no-margin">20.00 USD</p>
+                  <a href="panini.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/papas-thumb.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Papas</h3>
+                  <p class="no-margin">8.00 USD</p>
+                  <a href="papas.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/pizza.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Pizza</h3>
+                  <p class="no-margin">30.00 USD</p>
+                  <a href="pizza.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image:url(imgs/food/parrillas.jpg)">
+          <div class="screen">
+            <div class="row full-height middle-xs">
+              <div class="col-xs-12">
+                <div class="box white-text">
+                  <h3 class="lobster subtitle">Parrillas</h3>
+                  <p class="no-margin">35.00 USD</p>
+                  <a href="parrilla.html">ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery">
+      <div class="inner">
+        <div class="image" style="background-image:url(imgs/food/club-sandwich.jpg)"></div>
+        <div class="image" style="background-image:url(imgs/food/lasagna.jpg)"></div>
+        <div class="image" style="background-image:url(imgs/food/hamburger-thumb.jpg)"></div>
+        <div class="image" style="background-image:url(imgs/food/hot-cakes-thumb.jpg)"></div>
+        <div class="image" style="background-image:url(imgs/food/panini-thumb.jpg)"></div>
+        <div class="image" style="background-image:url(imgs/food/papas-thumb.jpg)"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card white relative black-text text-center">
+        <h3 class="medium slim">
+          En
+          <strong class="medium lobster"></strong>
+          Restaurant
+          cocinar no es una profesión, no es una técnica, es un
+          <strong class="lobster medium">arte.</strong>
+        </h3>
+        <p class="text-justify top-space--2">
+          Tu sabes que la mejor comida solo la encontraras en restaurante Lothiem.-
+          <strong class="lobster medium">Coco - Chef</strong>
+          <div class="large-paddin medium black text-center white-text"></div>
+        </p>
+      </div>
+    </div>
+
+    <div class="top-space--2 black big-padding white-text full-height" id="contact">
+      <div class="row middle-xs full-height">
+        <div class="col-xs-12">
+          <div class="box">
+            <form action="https://formspree.io/i_aloned_in_the_dark@hotmail.com" class="step-form" id="my-form" method="POST">
+              <div class="row center-xs">
+                <div class="col-xs-12">
+                  <div class="box">
+                    <p class="subtitle">Contacto</p>
+                    <ul class="list-inline">
+                        <li class="text-uppercase">Social Media &amp; Articles:</li>
+                        <li><a href="https://www.instagram.com/?hl=es " target="_blank">Instagram</a></li>
+                        <li><a href="https://es.pinterest.com/"  target="_blank">Pinterest</a></li>
+                        <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+                        <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
+                        <li><a href="https://bestself.co/" target="_blank">The Best Journal</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-xs-2 col-md-1 text-right">
+                  <div class="box">
+                    <div class="active path-step" data-position="1"></div>
+                    <div class="path-step" data-position="2"></div>
+                    <div class="path-step" data-position="3"></div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="box">
+                    <div class="fieldset step active">
+                      <input class="input" name="email" placeholder="Coloca tu correo electrónico" required type="email">
+                    </div>
+                    <div class="fieldset step">
+                      <input class="input" name="name" placeholder="¿Cuál es tu nombre?" required type="text">
+                    </div>
+                    <div class="fieldset step">
+                      <textarea class="input" name="body" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                      <p class="small text-left" id="info"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="location">
+      <div id="map"></div>
+      <div class="black large-padding white-text text-center medium" id="messages"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uxntd1Ceq5QW3DhU4mvjravjCJzOGlo&amp;libraries=geometry"></script>
+    <script src="dist/user_location.js"></script>
+    <script src="dist/maps.js"></script>
+    <script src="dist/path.js"></script>
+    <script src="dist/main.js"></script>
+
+
+    <!---CHAT
+    <center><iframe marginwidth="0" marginheight="0" src="http://www.mundochat.org/flash/index-webmasters.php?canal=bruno&web=www.restaurant.com&skin=blanco" width="450" height="450" scrolling="no" frameborder="0"></iframe></center>
+    -->
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app-services/authentication.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+
+    <!-- Real user service that uses an api -->
+    <!-- <script src="app-services/user.service.js"></script> -->
+
+    <!-- Fake user service for demo that uses local storage -->
+    <script src="app-services/user.service.local-storage.js"></script>
+
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>
+    <script src="register/register.controller.js"></script>
+
+
+
+  </body>
+</html>

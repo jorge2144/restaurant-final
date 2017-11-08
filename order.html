@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Winery: Your Order</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/platoCompra.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+
+<body id="checkout-page">
+<ul class="nav nav-pills">
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu <b class="caret"></b></a>
+  <ul class="dropdown-menu" id="menu1">
+    <li><a href="hotCakes.html">Hot Cakes</a></li>
+    <li><a href="hamburguesa.html">Hamburguesa</a></li>
+    <li><a href="panini.html">Panini</a></li>
+    <li><a href="clubSandwich.html">Club Sandwich</a></li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="index.html#gallery">Galeria</a>
+</li>
+<li class="dropdown">
+  <a href="index.html#contact">Contactanos</a>
+</li>
+<li class="dropdown">
+  <a href="index.html#location">Como llegar</a>
+</li>
+<li class="dropdown">
+  <a href="checkout.html">Carrito</a>
+</li>
+<li style="right: 5px ; float: right; color: white;">
+	La mejor comida la encuentras en restaurante Lothiem
+</li>
+</ul>
+
+<div id="site">
+	<header id="masthead">
+		<h1>Lothiem <span class="tagline">La mejor Comida y el mejor servicio desde 2017</h1>
+	</header>
+	<div id="content">
+		<h1>Carrito</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item(s)</th>
+					<th scope="col">Cantidad</th>
+					<th scope="col">Precio</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <div id="user-details">
+		 	<h2>Tus Datos</h2>
+		 	<div id="user-details-content"></div>
+		 </div>
+		 
+		 
+		 
+		 
+<form id="paypal-form" action="" method="post">
+	<input type="hidden" name="cmd" value="_cart" />
+	<input type="hidden" name="upload" value="1" />
+	<input type="hidden" name="business" value="" />
+        
+	<input type="hidden" name="currency_code" value="" />
+	<input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" />
+</form> 
+	</div>
+</div>
+
+
+</body>
+</html>	
